@@ -1,7 +1,3 @@
-import Swiper from '../../../node_modules/swiper/swiper-bundle';
-
-
-
 var swiper = new Swiper(".mySwiper", {
   watchSlidesProgress: true,
   watchSlidesVisibility: true,
