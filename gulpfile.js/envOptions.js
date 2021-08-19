@@ -36,6 +36,7 @@ let envOptions = {
     outputStyle: 'expanded',
     includePaths: [
       `${nodePath}/bootstrap/scss`,
+      `${nodePath}/swiper`
     ],
     path: `${distPath}/assets/style`,
   },
@@ -48,6 +49,7 @@ let envOptions = {
   },
   vendors: {
     src: [
+      `${nodePath}/swiper/swiper-bundle.min.js`,
       `${nodePath}/jquery/dist/jquery.slim.min.js`,
       `${nodePath}/bootstrap/dist/js/bootstrap.bundle.min.js`, // 已包含 popper.js
     ],
