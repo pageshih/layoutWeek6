@@ -1,0 +1,27 @@
+
+.swiper-container {
+  width: 100%;
+}
+.swiper-slide {
+  height: 52px;
+  line-height: 52px;
+  color:$dark;
+  text-align: center;
+}
+
+
+.header {
+height: 60px;
+}
+.heading{
+  background-image: url("../images/ricardo-gomez-angel-UrOZTfXT0h0-unsplash\ \(1\).jpg");
+  background-size: cover;
+  background-position: center center;
+  height: 480px;
+  display: flex;
+  align-items: flex-end;
+  &-text{
+    margin-bottom: 80px;
+  }
+  
+}
