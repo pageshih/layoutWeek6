@@ -9,10 +9,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
     />
-    <!-- <link
+    <link
     rel="stylesheet"
     href="https://unpkg.com/swiper/swiper-bundle.min.css"
-  /> -->
+  />
     <link
       href="https://fonts.googleapis.com/css2?family=Material+Icons"
       rel="stylesheet"
@@ -26,17 +26,81 @@
         <a class="flex-grow-1 navbar-brand text-center text-primary p-0" href="#"
           >EXHIBINECTION</a
         >
-        <a href="#" class="btn btn-none d-flex align-items-center p-0">
-          <span class="material-icons">confirmation_number</span>
-        </a>
+  
+        <ul class="d-none d-md-flex align-items-center fs-2">
+          <li class="me-7"><a href="#" class="text-dark text-decoration-none">Sign in</a></li>
+          <li><a href="#" class="me-7 text-dark text-decoration-none">Sign up</a></li>
+          <li><a href="#" class="btn btn-none d-flex align-items-center p-0 notificate-capsule">
+            <span class="material-icons">confirmation_number</span>
+          </a></li>
+        </ul>
+        
       </div>
     </nav>
+    <!-- navigation -->
+    <section class="navbar mb-6 mb-md-11 navigation <%- navgation %>">
+      <div class="px-0 container-md row mx-auto">
+    <ul class="nav container-fluid col-md-8 offset-md-2 justify-content-md-between">
+      <li class="nav-item">
+      <a class="nav-link" href="#">音樂</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link" href="#">戲劇</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link" href="#">設計</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link" href="#">藝術</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link" href="#">美食</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link" href="#">旅遊</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link" href="#">電影</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link" href="#">親子</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link" href="#">期間限定</a>
+      </li>
+    </ul>
+    </div>
+    </section>
 
     <%- contents %>
 
-    <footer class="footer">footer</footer>
+    <!-- subscribe -->
+    <section class="d-flex align-items-end pb-8 subscribe-bg <%- subscribe %>">
+      <div class="container-fluid container-md">
+      <div class="row">
+        <div class="col-12 col-md-4">
+          <h2 class="text-white">想收到最新消息嗎？<br>快訂閱我們！</h2>
+          <div class="btn-toolbar mb-3" role="toolbar" aria-label="Toolbar with button groups">
+            <div class="input-group flex-grow-1">
+              <input type="text" class="form-control flex-grow-1" placeholder="輸入您的電子信箱" aria-label="輸入您的電子信箱" aria-describedby="btnGroupAddon">
+              <button class="btn btn-secondary btn-12-52" id="btnGroupAddon">訂閱</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+    <footer class="footer">
+      <div class="container-fluid container-md d-flex justify-content-between align-items-center">
+        <p class="d-flex flex-column flex-md-row align-items-md-center"><span class="me-5 fs-4 fs-md-5">EXHIBINECTION</span>© 2020. All Rights Reserved.</p>
+        <ul class="d-none d-md-flex align-items-center fs-2">
+          <li class="me-5"><a href="#" class="text-dark text-decoration-none">Sign in</a></li>
+          <li><a href="#" class="text-dark text-decoration-none">Sign up</a></li>
+        </ul>
+      </div>
+    </footer>
     
-    <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
 

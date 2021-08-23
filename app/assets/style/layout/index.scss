@@ -1,14 +1,13 @@
-
 .swiper-container {
   width: 100%;
+  margin-right: -30px;
 }
-.swiper-slide {
-  height: 52px;
-  line-height: 52px;
-  color:$dark;
-  text-align: center;
+.swiper-wrapper{
+  padding: 0;
 }
-
+.swiper-slide{
+  padding-right: 30px;
+}
 
 .header {
 height: 60px;
@@ -19,9 +18,88 @@ height: 60px;
   background-position: center center;
   height: 480px;
   display: flex;
-  align-items: flex-end;
-  &-text{
-    margin-bottom: 80px;
-  }
+  justify-content: center;
+  align-items: center;
   
+    padding-top: 174px;
+    @include media-breakpoint-up(md) { 
+      padding-top: 0;
+     }
+  
+  &-btn{
+    button{
+      max-width: 165px;
+      flex-grow: 1;
+    }
+  }
+}
+
+
+
+
+.exhibition-img{
+  height: 350px;
+  img{
+    object-fit: cover;
+  }
+  .pc-img{
+    left:-20%;
+  }
+
+}
+
+
+.card{
+  @include media-breakpoint-up(md) { 
+  background-clip: content-box;
+  }
+  &-main-content{
+    flex-basis: 540px;
+  }
+  &-mobile-img{
+    max-width: 100%;
+    @include media-breakpoint-up(sm) { 
+      height: auto;
+      }
+    @include media-breakpoint-up(xs) { 
+      height: 100%;
+      }
+  }
+}
+
+
+.live-title{
+  margin-bottom: 32px;
+&-gap{
+  padding-right: 12px;
+  margin-right: 12px;
+}
+}
+
+.live-bg{
+  background-image: url("./../images/people2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.live-content-bgc{
+  background-color: rgba(25, 0, 20,0.8);
+}
+.live-artist-photo{
+  width: 128px;
+  height: 128px;
+  margin-bottom: 12px;
+}
+.live-btn{
+  padding: 10px 38px;
+}
+
+.guess-img{
+  max-width: 350px;
+  height: 350px;
+  object-fit: cover;
+}
+.guess-img-mobile{
+  height: 345px;
+  object-fit: cover;
 }

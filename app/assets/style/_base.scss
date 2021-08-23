@@ -1,0 +1,97 @@
+h2{
+    margin-bottom:  $spacer * 1.5;
+}
+p{
+    margin-bottom: $spacer * 0.5;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.card{
+    margin-bottom: $spacer;
+}
+.card-img-top{
+    margin-bottom: $spacer * 0.5;
+}
+
+.card-text{
+    font-weight: 500;
+    margin-bottom: $spacer * 1.25;
+}
+
+.fw-medium{
+    font-weight: 500;
+}
+.opacity-80{
+    opacity:0.8;
+}
+.btn-12-52{
+    padding: 12px 52px;
+}
+
+.notificate-capsule{
+position: relative;
+    &::after{
+        content: "3";
+        font-size: 12px;
+        position: absolute;
+        background-color: $secondary;
+        border-radius: 9px;
+    }
+    
+}
+.navigation{
+    border-bottom: 1px solid $dark;
+    height: 52px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+  }
+  .nav{
+    display: flex;
+    flex-wrap: nowrap;
+    li{
+      display: flex;
+      justify-content: center;
+      flex-shrink: 0;
+      flex-basis: 83px;
+      padding: 0px 9px;
+      @include media-breakpoint-up(md) { 
+        flex-shrink: 1;
+       }
+    }
+    &-link{
+      color:$dark;
+      padding: 0;
+      text-align: center;
+      white-space: nowrap;
+      &:hover{
+        color:$dark;
+        border-bottom: 1px solid $secondary;
+      }
+      &:visited{
+        color:$dark;
+      }
+    }
+  }
+
+
+.subscribe-bg{
+    background-image: url("../images/wladislaw-peljuchno-Y_f1aHpR1tc-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+}
+.footer{
+    padding-top: 16px;
+    padding-bottom: 16px;
+    @include media-breakpoint-up(md) { 
+        padding-top: 28px;
+        padding-bottom: 28px;
+        }
+}
+
+
